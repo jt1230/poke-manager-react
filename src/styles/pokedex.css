@@ -1,0 +1,44 @@
+.pokedex-container{
+	min-height: 1755px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.search-poke{
+    width: 30em;
+	display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    position: fixed;
+	top: 1em;
+    left: 18em; 
+    z-index: 5;
+	
+}
+.search-poke > input{
+	width: 100%;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid lightgray;
+	text-align: center;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	border: 1px solid white;
+	position: relative;
+}
+
+
+.pokedex-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
+	grid-gap: 2em;
+	flex-basis: 100%;
+    margin: 0 3em;
+}
+
