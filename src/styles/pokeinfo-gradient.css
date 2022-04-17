@@ -1,0 +1,54 @@
+.poke-info.normal{
+	background: linear-gradient(180deg, #4d4d21, #a8a878, #fafadd);
+}
+.poke-info.fire{
+	background: linear-gradient(180deg, #b43a3a, #ec7f31,#fff582);
+}
+.poke-info.water{
+	background: linear-gradient(180deg, #162a5e, #6890f0,#d1defc); 
+}
+.poke-info.grass{
+	background: linear-gradient(180deg, #2a630e, #78c850,#cbebbc); 
+}
+.poke-info.electric{
+	background: linear-gradient(180deg, #7e6b00, #f8d030,#fff2c0);
+}
+.poke-info.ice{
+	background: linear-gradient(180deg, #396363, #98d8d8,#ddffff);
+}
+.poke-info.fighting{
+	background: linear-gradient(180deg, #8d0b04, #c03028,#f0c5c3);
+}
+.poke-info.poison{
+	background: linear-gradient(180deg, #4e0f4e, #a040a0,#f1cef1);
+}
+.poke-info.ground{
+	background: linear-gradient(180deg, #745b17, #e0c068,#f3e7c4);
+}
+.poke-info.flying{
+	background: linear-gradient(180deg, #393052, #a890f0,#dfd4ff);
+}
+.poke-info.psychic{
+	background: linear-gradient(180deg, #6e122e, #f85888,#ffd1df);
+}
+.poke-info.bug{
+	background: linear-gradient(180deg, #4a5209, #a8b820,#e0e6b0);
+}
+.poke-info.rock{
+	background: linear-gradient(180deg, #6d5d14, #b79f37,#f8eec0);
+}
+.poke-info.ghost{
+	background: linear-gradient(180deg, #32204e, #705898,#e2d6f7);
+}
+.poke-info.dark{
+	background: linear-gradient(180deg, #1f140d, #705848,#f0e0d6);
+}
+.poke-info.dragon{
+	background: linear-gradient(180deg, #29125e, #7038f8,#e8e1f8);
+}
+.poke-info.steel{
+	background: linear-gradient(180deg, #424249, #b8b8d0,#e9e9fa);
+}
+.poke-info.fairy{
+	background: linear-gradient(180deg, #8a4349, #f0b6bc,#fce8ea);
+}
