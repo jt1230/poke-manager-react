@@ -1,0 +1,40 @@
+.party{
+    margin-top: 2em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #206a61;
+
+}
+
+.party-header{
+    margin: 0 3em;
+    letter-spacing: 1px;
+}
+
+.party-pokes{
+	margin: 2em;
+    margin-right: 0em;
+    min-height: 50vh;
+    padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	position: relative;
+    border-top-left-radius: 3em;;
+    background-color: #3f9390;
+}
+
+.left-content{
+    flex-basis: 40%;
+}
+
+.right-content{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    grid-gap: 1em;
+    flex-basis: 60%;
+
+}

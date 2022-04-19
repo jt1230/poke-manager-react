@@ -1,33 +1,19 @@
-import { Fragment } from "react"
-
-const Card = ({pokemon, loading, infoPokemon, filterPokemon, setPopUp}) => {
-	//console.log(pokemon);  //!TODO - CONSOLE.LOG
+const Card = ({pokemon, infoPokemon, setPopUp}) => {
 
 	const handleClick = (poke) =>{
-		console.log("click");
 		setPopUp(true)
 		infoPokemon(poke)
 	}
 
 	return(
-		<>
-			{
-				loading ? <h1>Loading...</h1> :
-				pokemon.map(poke =>{
-						return(
-							<Fragment key={poke.id+poke.name} > 
-								{poke.name.includes(filterPokemon) && <div className="card" 
-									onClick={() => handleClick(poke)}>
-									<h3>#{poke.id}</h3>
-									<img src={poke.sprites.front_default } alt="" />
-									<h3>{poke.name[0].toUpperCase()+poke.name.substring(1)}</h3>
-								</div> }								
-							</Fragment>
-							)
-					})
-			}
-
+		<> 
+			<div className="card" 
+				onClick={() => handleClick(pokemon)}>
+				<h3>#{pokemon.id}</h3>
+				<h3>{pokemon.name[0].toUpperCase()+pokemon.name.substring(1)}</h3>
+				<img src={pokemon.sprites.front_default } alt={`picture of ${pokemon.name}`} />
+			</div>								
 		</>
-	)
+		)
 }
 export default Card

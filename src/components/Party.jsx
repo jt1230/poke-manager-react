@@ -1,61 +1,50 @@
-import { useState, useEffect, Fragment } from "react"
-import Pokeinfo from "./Pokeinfo"
+import { useRef, useState, useEffect } from 'react'
+import PartyCard from './PartyCard'
+import Pokeinfo from './Pokeinfo'
 
-const Party = () => {
-	const [pokeParty, setPokeParty] = useState([])
-	const [loading, setLoading] = useState(true)
-	const [partyUrl, setpartyUrl] = useState('https://pokeapi.co/api/v2/pokemon?offset=0&limit=3')
+
+const Party = ({pokeData, pokeList, setPokeList}) => {
+
+	const [name, setName] = useState([])
 	const [pokeInfo, setPokeInfo] = useState(null)
+	const [popUp, setPopUp] = useState(false)
+	const mounted = useRef(false)
+	
 
-
-	const getPokePartyData = async() => {
-		setLoading(true)
-		const response = await fetch(partyUrl)
-		let data = await response.json()
-		getPokemon(data.results)
-		setLoading(false)
-	}
-
-	const getPokemon = async(response) => {
-		// console.log("getPokemon(response): ", response);  //! CONSOLE.LOG
-		
-		response.map(async(pokemon) =>{
-			const result = await fetch(pokemon.url)
-			let data = await result.json()
-			// console.log("Response.map: ", data)  //! CONSOLE.LOG
-			setPokeParty(element => {
-				element = [...element, data]
-				element.sort((a, b) => a.id - b.id)
-				return element
+	useEffect(() =>{
+		const getFetchedPokemon = async(response) => {
+			response.map(async(pokemon) =>{
+				const result = await fetch(pokemon.url)
+				let data = await result.json()
+	
+				setPokeList(element => {
+					element = [...element, data]
+					return element
+				})
 			})
-		})
-	}
-
-	useEffect(() => {
-		getPokePartyData()
-		
-
-	}, [partyUrl])
+		}
+		getFetchedPokemon(pokeData.slice(3,6))
+	}, [])
 
 	return(
-		<div className="pokedex">
-			{pokeParty.map(poke =>{
-						return(
-							<Fragment key={poke.id+poke.name} > 
-								<div className="card" 
-									onClick={() => setPokeInfo(poke)}>
-									<h3>#{poke.id}</h3>
-									<img src={poke.sprites.front_default} alt="" />
-									<h3>{poke.name[0].toUpperCase()+poke.name.substring(1)}</h3>
-								</div> 
-								<div className="right-content">
-									<Pokeinfo data={pokeInfo} party={true} />
-								</div>								
-							</Fragment>
-							)}
-			)}
-					
-		</div>
+		<>
+			{<div className="party">
+				<div className="party-header" >
+					<h3>Party Land </h3>
+					<p>Watch your current party set up. Here you can rename your pokemons and chose to release them back to the wild. To start you up, we have chosen to give you a family of fire-breathing chars.  </p>
+				</div>
+				<div className="party-pokes">
+					<div className="left-content">
+						poke info here
+					</div>
+					<div className="right-content">
+						{pokeList.length <= 0 ? <p>Oh, my ... Looks quite empty in here. You should go and catch some pokemon to light up the party!</p> : 
+							pokeList.map(poke => {return (<PartyCard key={poke.id} pokemon={poke} infoPokemon={pokeInfo => setPokeInfo(pokeInfo)} setPopUp={setPopUp} />)})}
+					</div>
+				</div>
+				<Pokeinfo data={pokeInfo} popUp={popUp} setPopUp={setPopUp} party={true}/>
+			</div>}
+		</>
 	)
 }
 export default Party

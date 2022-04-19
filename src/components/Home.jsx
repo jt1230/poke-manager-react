@@ -4,6 +4,7 @@ const Home = () => {
 	return(
 		<div className="home">
 			<img src={HOMELOGO} alt="" />
+			<div className="shadow"></div>
 		</div>
 	)
 }

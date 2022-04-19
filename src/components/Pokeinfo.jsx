@@ -1,16 +1,7 @@
 import { useState } from "react"
 
 useState
-const Pokeinfo = ({data, party, popUp, setPopUp}) => {
-	//console.log(data);   //!TODO - CONSOLE LOG
-	
-
-	const addPokemon = (id) => {
-		console.log(`Added pokemon with ID: ${id} to party?`)
-		// const newPoke = poke.id
-		// setPokeParty = (prevState => 
-		// 	[...prevState, newPoke])
-	}
+const Pokeinfo = ({data, popUp, setPopUp,party, addPokemon}) => {
 
 	return(
 		
@@ -19,7 +10,7 @@ const Pokeinfo = ({data, party, popUp, setPopUp}) => {
 			<div className="poke-info">
 				{
 					
-					(!data) ? "" : (
+					(!data) ? (<h3>Loading pokeinfo ...</h3>) : (
 						<div className={`poke-info ${data.types[0].type.name}`}>
 							<h1>#{data.id} {data.name[0].toUpperCase()+data.name.substring(1)}</h1>
 							<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`} alt="" />
@@ -55,7 +46,7 @@ const Pokeinfo = ({data, party, popUp, setPopUp}) => {
 									})
 								}
 							</div>
-							{!party &&<button className="btn" onClick={() => addPokemon(data.id)}>TODO - Add to party</button>}
+							{party ? "" : <button className="btn" onClick={() => addPokemon(data)}>TODO - Add to party</button>}
 						</div>
 					)
 				}

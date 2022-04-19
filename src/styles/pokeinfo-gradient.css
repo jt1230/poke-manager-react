@@ -2,25 +2,25 @@
 	background: linear-gradient(180deg, #4d4d21, #a8a878, #fafadd);
 }
 .poke-info.fire{
-	background: linear-gradient(180deg, #b43a3a, #ec7f31,#fff582);
+	background: linear-gradient(180deg, #b43a3a, #f6af7c,#fff9bb);
 }
 .poke-info.water{
-	background: linear-gradient(180deg, #162a5e, #6890f0,#d1defc); 
+	background: linear-gradient(180deg, #162a5e, #a2beff,#f8f8f8); 
 }
 .poke-info.grass{
-	background: linear-gradient(180deg, #2a630e, #78c850,#cbebbc); 
+	background: linear-gradient(180deg, #2a630e, #ace78f,#ecfee4); 
 }
 .poke-info.electric{
-	background: linear-gradient(180deg, #7e6b00, #f8d030,#fff2c0);
+	background: linear-gradient(180deg, #7e6b00, #f9ebb0,#fffbeb);
 }
 .poke-info.ice{
-	background: linear-gradient(180deg, #396363, #98d8d8,#ddffff);
+	background: linear-gradient(180deg, #396363, #c6ffff,#eaffff);
 }
 .poke-info.fighting{
-	background: linear-gradient(180deg, #8d0b04, #c03028,#f0c5c3);
+	background: linear-gradient(180deg, #8d0b04, #ff857e,#fdeae9);
 }
 .poke-info.poison{
-	background: linear-gradient(180deg, #4e0f4e, #a040a0,#f1cef1);
+	background: linear-gradient(180deg, #4e0f4e, #d978d9,#ffeaff);
 }
 .poke-info.ground{
 	background: linear-gradient(180deg, #745b17, #e0c068,#f3e7c4);
@@ -29,13 +29,13 @@
 	background: linear-gradient(180deg, #393052, #a890f0,#dfd4ff);
 }
 .poke-info.psychic{
-	background: linear-gradient(180deg, #6e122e, #f85888,#ffd1df);
+	background: linear-gradient(180deg, #6e122e, #f895b3,#ffeaf0);
 }
 .poke-info.bug{
-	background: linear-gradient(180deg, #4a5209, #a8b820,#e0e6b0);
+	background: linear-gradient(180deg, #4a5209, #b7f07e,#dfffd5);
 }
 .poke-info.rock{
-	background: linear-gradient(180deg, #6d5d14, #b79f37,#f8eec0);
+	background: linear-gradient(180deg, #483d0a, #9b8c47,#f8eec0);
 }
 .poke-info.ghost{
 	background: linear-gradient(180deg, #32204e, #705898,#e2d6f7);
@@ -44,7 +44,7 @@
 	background: linear-gradient(180deg, #1f140d, #705848,#f0e0d6);
 }
 .poke-info.dragon{
-	background: linear-gradient(180deg, #29125e, #7038f8,#e8e1f8);
+	background: linear-gradient(180deg, #29125e, #b194f3,#f7f4ff);
 }
 .poke-info.steel{
 	background: linear-gradient(180deg, #424249, #b8b8d0,#e9e9fa);

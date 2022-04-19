@@ -1,81 +1,54 @@
-.type{
-	color: white;
-	padding: 1.5em;
-	border-radius: 8px;
-	border: 1px solid rgba(0, 0, 0, 0.089);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
 .type.normal{
-	background-color: #a8a878;
 	background-image: url("../images/180px-Pokémon_Normal_Type_Icon.svg.png");
 }
 .type.fire{
-	background-color: #ec7f31; 
 	background-image: url("../images/180px-Pokémon_Fire_Type_Icon.svg.png");
 }
 .type.water{
-	background-color: #6890f0; 
 	background-image: url("../images/180px-Pokémon_Water_Type_Icon.svg.png");
 }
 .type.grass{
-	background-color: #78c850;
 	background-image: url("../images/180px-Pokémon_Grass_Type_Icon.svg.png");
-	
 }
 .type.electric{
-	background-color: #f8d030;
 	background-image: url("../images/180px-Pokémon_Electric_Type_Icon.svg.png");
 }
 .type.ice{
-	background-color: #98d8d8;
 	background-image: url("../images/180px-Pokémon_Ice_Type_Icon.svg.png"); 
 }
 .type.fighting{
-	background-color: #c03028; 
 	background-image: url("../images/180px-Pokémon_Fighting_Type_Icon.svg.png");
 }
 .type.poison{
-	background-color: #a040a0; 
 	background-image: url("../images/180px-Pokémon_Poison_Type_Icon.svg.png");
 }
 .type.ground{
-	background-color: #e0c068; 
 	background-image: url("../images/180px-Pokémon_Ground_Type_Icon.svg.png");
 }
 .type.flying{
-	background-color: #a890f0; 
 	background-image: url("../images/180px-Pokémon_Flying_Type_Icon.svg.png");
 }
 .type.psychic{
-	background-color: #f85888; 
 	background-image: url("../images/180px-Pokémon_Psychic_Type_Icon.svg.png");
 }
-.type.bug{
-	background-color: #a8b820; 
+.type.bug{ 
 	background-image: url("../images/180px-Pokémon_Bug_Type_Icon.svg.png");
 }
 .type.rock{
-	background-color: #b79f37; 
 	background-image: url("../images/180px-Pokémon_Rock_Type_Icon.svg.png");
 }
 .type.ghost{
-	background-color: #705898; 
 	background-image: url("../images/180px-Pokémon_Ghost_Type_Icon.svg.png");
 }
 .type.dark{
-	background-color: #705848; 
 	background-image: url("../images/180px-Pokémon_Dark_Type_Icon.svg.png");
 }
 .type.dragon{
-	background-color: #7038f8; 
 	background-image: url("../images/180px-Pokémon_Dragon_Type_Icon.svg.png");
 }
 .type.steel{
-	background-color: #b8b8d0; 
 	background-image: url("../images/180px-Pokémon_Steel_Type_Icon.svg.png");
 }
 .type.fairy{
-	background-color: #f0b6bc; 
 	background-image: url("../images/180px-Pokémon_Fairy_Type_Icon.svg.png");
 }
