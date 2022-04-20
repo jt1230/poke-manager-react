@@ -14,6 +14,6 @@ const Card = ({pokemon, infoPokemon, setPopUp}) => {
 				<img src={pokemon.sprites.front_default } alt={`picture of ${pokemon.name}`} />
 			</div>								
 		</>
-		)
+	)
 }
 export default Card

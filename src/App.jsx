@@ -12,7 +12,7 @@ function App() {
 	const [pokeData, setPokeData] = useState([])
 	const [pokeList, setPokeList] = useState([])
 	const [isLoading, setIsLoading] = useState(true)
-	const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000')
+	const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1000'
 
 	useEffect(async() => {
 		setIsLoading(true)

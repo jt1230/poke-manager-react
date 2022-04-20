@@ -3,12 +3,12 @@ import PartyCard from './PartyCard'
 import Pokeinfo from './Pokeinfo'
 
 
+
 const Party = ({pokeData, pokeList, setPokeList}) => {
 
 	const [name, setName] = useState([])
 	const [pokeInfo, setPokeInfo] = useState(null)
 	const [popUp, setPopUp] = useState(false)
-	const mounted = useRef(false)
 	
 
 	useEffect(() =>{
@@ -34,14 +34,11 @@ const Party = ({pokeData, pokeList, setPokeList}) => {
 					<p>Watch your current party set up. Here you can rename your pokemons and chose to release them back to the wild. To start you up, we have chosen to give you a family of fire-breathing chars.  </p>
 				</div>
 				<div className="party-pokes">
-					<div className="left-content">
-						poke info here
-					</div>
-					<div className="right-content">
+					<div className="party-content">
 						{pokeList.length <= 0 ? <p>Oh, my ... Looks quite empty in here. You should go and catch some pokemon to light up the party!</p> : 
 							pokeList.map(poke => {return (<PartyCard key={poke.id} pokemon={poke} infoPokemon={pokeInfo => setPokeInfo(pokeInfo)} setPopUp={setPopUp} />)})}
-					</div>
 				</div>
+					</div>
 				<Pokeinfo data={pokeInfo} popUp={popUp} setPopUp={setPopUp} party={true}/>
 			</div>}
 		</>

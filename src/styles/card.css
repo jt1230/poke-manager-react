@@ -16,26 +16,3 @@
 	box-shadow: 0 0 10px #818181;
 }
 
-.partycard{
-	height: 3.5em;
-	width: 30em;
-	color: white;
-	background: linear-gradient(180deg, #3890d9, #3890d9,#91d4f3);
-	border: 3px solid #305472;
-	border-radius: 2em 6px 6px 2em;
-	padding: 1em;
-	display: flex;
-	align-items: center;
-	box-sizing: border-box;
-}
-
-.partycard:hover{
-	cursor: pointer;
-	background: linear-gradient(180deg, #78cfe8, #78cfe8,#daeef4);
-	border: 3px solid #6490b4;
-}
-
-.partycard > img {
-	height: 2.5em;
-	border-radius: 50%;
-}
