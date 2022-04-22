@@ -1,11 +1,12 @@
-import HOMELOGO from "../images/home-logo.png"
+import HOMELOGO from '../images/home-logo.png'
+import './Home.css'
 
 const Home = () => {
 	return(
-		<div className="home">
-			<img src={HOMELOGO} alt="" />
-			<div className="shadow"></div>
-		</div>
+		<section className='home'>
+			<img src={HOMELOGO} alt='' />
+			<div className='shadow'></div>
+		</section>
 	)
 }
 export default Home

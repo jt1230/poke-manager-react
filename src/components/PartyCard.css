@@ -1,0 +1,63 @@
+.partycard{
+	height: 6em;
+	width: 38em;
+	color: white;
+	background: linear-gradient(180deg, #3890d9, #3890d9,#91d4f3);
+	border: 3px solid #305472;
+	border-radius: 2em 6px 6px 2em;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+    font-size: 11px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.partycard:hover{
+	cursor: pointer;
+	background: linear-gradient(180deg, #78cfe8, #78cfe8,#daeef4);
+	border: 3px solid #6490b4;
+}
+
+.partycard > img {
+	height: 4.5em;
+}
+
+.partycard > .hp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.partycard > .hp > .hp-bar{
+    height: 12px;
+    width: 10em;
+    background: #72f5ab;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+.partycard > .party-edit, .partycard > .party-btn{
+    height: 2em;
+    padding: 0.5em;
+    color: white;
+}
+
+.partycard > .party-edit:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.partycard > .party-btn:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+.party > input {
+    width: 25em;
+    height: 3em;
+    margin: auto;
+    text-align: center;
+}

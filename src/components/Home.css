@@ -15,7 +15,6 @@
 .shadow{
 	height: 4em;
 	border-radius: 60%;
-	
 	animation: grow 1s infinite alternate;
 
 }

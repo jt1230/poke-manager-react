@@ -1,3 +1,7 @@
+import './Card.css'
+import { pokeNumber } from './poke-number'
+import { capitalize } from './capitalize'
+
 const Card = ({pokemon, infoPokemon, setPopUp}) => {
 
 	const handleClick = (poke) =>{
@@ -7,12 +11,19 @@ const Card = ({pokemon, infoPokemon, setPopUp}) => {
 
 	return(
 		<> 
-			<div className="card" 
+			<section className='card' 
 				onClick={() => handleClick(pokemon)}>
-				<h3>#{pokemon.id}</h3>
-				<h3>{pokemon.name[0].toUpperCase()+pokemon.name.substring(1)}</h3>
+				<p>#{pokeNumber(pokemon.id)}</p>
+				<h3>{capitalize(pokemon.name)}</h3>
 				<img src={pokemon.sprites.front_default } alt={`picture of ${pokemon.name}`} />
-			</div>								
+				<div className='types' >{
+					pokemon.types.map(poke => {
+						return(
+							<div className={`type ${poke.type.name}`} key={poke.id + poke.type.name}></div>
+						)
+					})
+				}</div>	
+			</section>								
 		</>
 	)
 }

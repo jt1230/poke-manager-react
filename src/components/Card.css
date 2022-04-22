@@ -1,54 +1,102 @@
-.type.normal{
+.card{
+	width: 180px;
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	box-shadow: 0 0 3px #888787;
+	padding: 1em;
+	margin: 0.5em 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.card > img {
+	margin: 1em;
+	background-color: white;
+	border: 1px solid #dadada;
+	border-radius: 50%;
+	height: 7em;
+
+}
+
+.card > p{
+	font-size: 14px;
+	font-weight: bold;
+	color: #9a9b9d;
+}
+
+.card:hover{
+	cursor: pointer;
+	box-shadow: 0 0 8px #818181;
+    transform: translateY(2px)
+}
+
+.card > .types{
+	display: flex;
+	justify-content: center;
+}
+
+.card > .types > .type{
+	padding: 1em;
+	color: white;
+	border-radius: 8px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card .type.normal{
 	background-image: url("../images/180px-Pokémon_Normal_Type_Icon.svg.png");
 }
-.type.fire{
+.card .type.fire{
 	background-image: url("../images/180px-Pokémon_Fire_Type_Icon.svg.png");
 }
-.type.water{
+.card .type.water{
 	background-image: url("../images/180px-Pokémon_Water_Type_Icon.svg.png");
 }
-.type.grass{
+.card .type.grass{
 	background-image: url("../images/180px-Pokémon_Grass_Type_Icon.svg.png");
 }
-.type.electric{
+.card .type.electric{
 	background-image: url("../images/180px-Pokémon_Electric_Type_Icon.svg.png");
 }
-.type.ice{
+.card .type.ice{
 	background-image: url("../images/180px-Pokémon_Ice_Type_Icon.svg.png"); 
 }
-.type.fighting{
+.card .type.fighting{
 	background-image: url("../images/180px-Pokémon_Fighting_Type_Icon.svg.png");
 }
-.type.poison{
+.card .type.poison{
 	background-image: url("../images/180px-Pokémon_Poison_Type_Icon.svg.png");
 }
-.type.ground{
+.card .type.ground{
 	background-image: url("../images/180px-Pokémon_Ground_Type_Icon.svg.png");
 }
-.type.flying{
+.card .type.flying{
 	background-image: url("../images/180px-Pokémon_Flying_Type_Icon.svg.png");
 }
-.type.psychic{
+.card .type.psychic{
 	background-image: url("../images/180px-Pokémon_Psychic_Type_Icon.svg.png");
 }
-.type.bug{ 
+.card .type.bug{ 
 	background-image: url("../images/180px-Pokémon_Bug_Type_Icon.svg.png");
 }
-.type.rock{
+.card .type.rock{
 	background-image: url("../images/180px-Pokémon_Rock_Type_Icon.svg.png");
 }
-.type.ghost{
+.card .type.ghost{
 	background-image: url("../images/180px-Pokémon_Ghost_Type_Icon.svg.png");
 }
-.type.dark{
+.card .type.dark{
 	background-image: url("../images/180px-Pokémon_Dark_Type_Icon.svg.png");
 }
-.type.dragon{
+.card .type.dragon{
 	background-image: url("../images/180px-Pokémon_Dragon_Type_Icon.svg.png");
 }
-.type.steel{
+.card .type.steel{
 	background-image: url("../images/180px-Pokémon_Steel_Type_Icon.svg.png");
 }
-.type.fairy{
+.card .type.fairy{
 	background-image: url("../images/180px-Pokémon_Fairy_Type_Icon.svg.png");
 }

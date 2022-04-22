@@ -1,8 +1,71 @@
-@import url('./styles/card.css');
-@import url('./styles/home.css');
-@import url('./styles/party.css');
-@import url('./styles/pokedex.css');
-@import url('./styles/pokeinfo.css');
-@import url('./styles/pokeinfo-gradient.css');
-@import url('./styles/pokeinfo-types.css');
-@import url('./styles/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #e73f33;
+	width: 99vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("./images/background-pic.jpg");
+	background-size: cover; 
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+header{
+	height: 4em;
+	padding-bottom: 3.5em;
+	background-color: white;
+	width: 80vw;
+	font-size: large;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+}
+
+.navbar a:link, .navbar a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a:hover, .navbar a.active{
+	color: #e73f33;
+}
+
+.navbar, .navbar a{
+	margin: auto;
+	padding: 0 2em;
+}
+
+main{
+	width: 80vw;
+	display:flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.main-content{
+	margin-top: 4em;
+	min-height: 100vh;
+	width: 100%;
+	background-color: white; 
+	border-radius: 6px;
+	border: 30px solid white;
+} 
+
+footer{
+	background-color: white;
+	position: fixed;
+	bottom: 1px;
+	padding: 1em;
+}
