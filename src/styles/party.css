@@ -6,6 +6,13 @@
     box-sizing: border-box;
     background-color: #206a61;
     color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.party p{
+    margin-top: 1em;
+    letter-spacing: 3px;
 }
 
 .party-header{
@@ -25,12 +32,13 @@
 .party-content{
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(28em, 0.2fr));
+    gap: 1em;
     justify-content: space-around;
 }
 
 .partycard{
-	height: 3.5em;
-	width: 28em;
+	height: 6em;
+	width: 35em;
 	color: white;
 	background: linear-gradient(180deg, #3890d9, #3890d9,#91d4f3);
 	border: 3px solid #305472;
@@ -40,6 +48,7 @@
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
+    font-size: 12px;
 }
 
 .partycard:hover{
@@ -49,13 +58,13 @@
 }
 
 .partycard > img {
-	height: 2.5em;
-	border-radius: 50%;
+	height: 4em;
 }
 
 .hp{
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .hp-bar{
@@ -66,8 +75,8 @@
     border-radius: 6px;
 }
 
-.party-edit{
-    height: 1em;
+.party-edit, .party-btn{
+    height: 2em;
     color: white;
 }
 
@@ -76,13 +85,20 @@
     cursor: pointer;
 }
 
-.party-btn{
-    height: 1.5em;
-    color: white;
-}
-
 .party-btn:hover{
     color: red;
     cursor: pointer;
 
+}
+.textEdit{
+    color: yellow;
+    font-size: 20px;
+}
+.party > input {
+    width: 25em;
+    height: 2em;
+    margin: auto;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
 }

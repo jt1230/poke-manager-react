@@ -52,6 +52,10 @@
 	border-radius: 8px;
 }
 
+.poke-info .btn:hover{
+	box-shadow: 0 0 8px gray;
+}
+
 .type{
 	color: white;
 	padding: 1.5em;

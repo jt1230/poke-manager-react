@@ -3,32 +3,10 @@ import Card from './Card'
 import Pokeinfo from './Pokeinfo'
 
 
-const Pokedex = ({pokeData, pokeList, setPokeList, addPokemon}) => {
+const Pokedex = ({pokemon, pokeList, setPokeList, addPokemon}) => {
 	const [pokeInfo, setPokeInfo] = useState([])
 	const [pokeFilter, setPokeFilter] = useState('')
 	const [popUp, setPopUp] = useState(false)
-	const [pokemon, setPokemon] = useState([])
-
-	useEffect(() => {
-
-		const getPokemon = async(response) => {		
-			response.map(async(pokemon) =>{
-				const result = await fetch(pokemon.url)
-				let data = await result.json()
-	
-				setPokemon(element => {
-					element = [...element, data]
-					element.sort((a, b) => a.id - b.id)
-					return element
-				})
-			})
-		}
-		getPokemon(pokeData)
-
-	}, [])
-
-
-	
 
 	return(
 		<div className="pokedex">
@@ -40,16 +18,16 @@ const Pokedex = ({pokeData, pokeList, setPokeList, addPokemon}) => {
 			
 				<div className="container">
 					<div className="pokedex-content">
-						{pokemon.filter(poke =>{
+						{pokemon.filter((poke) =>{
 							if(pokeFilter == ""){
 								return poke
 							}
 							else if(poke.name.toLowerCase().includes(pokeFilter.toLowerCase())){
 								return poke
 							}
-						}).map(poke => {
+						}).map((poke,i) => {
 							return (
-								<Card key={poke.id+poke.name} pokemon={poke} infoPokemon={pokeInfo => setPokeInfo(pokeInfo)} filterPokemon={pokeFilter} setPopUp={setPopUp} />)
+								<Card key={poke.id+i} pokemon={poke} infoPokemon={pokeInfo => setPokeInfo(pokeInfo)} filterPokemon={pokeFilter} setPopUp={setPopUp} />)
 								})
 						}
 					</div>

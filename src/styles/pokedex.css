@@ -40,5 +40,5 @@
 	grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
 	grid-gap: 2em;
 	flex-basis: 100%;
-    margin: 0 3em;
+    margin: 0 5em;
 }
